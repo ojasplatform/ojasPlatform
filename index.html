@@ -39,31 +39,38 @@
         </div>
 
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="welcome-to-ojas-platform" class="anchor" href="#welcome-to-ojas-platform"><span class="octicon octicon-link"></span></a>Welcome to Ojas Platform.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Ojas platform emerged out of trying to build a solution to detect and prevent data leaks from web applications. Traditional WAFs are good at protecting OWASP top 10 but do little more than that. Our goal was to go beyond that and build something that allows web developers/DevOps folks to test and deploy more robust Web Applications. We figured if we could enable them to leverage the <code>state of the art</code> machine learning algorithms to understand how their apps are being used and use this knowledge to detect anomalous interactions with the apps, then we would enable them to build more robust and secure services. </p>
+
+<h3>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>As a result what we set out to build ended up being a near real-time system that inspects packets streaming from some source(s). We set out by leveraging streaming big data tools such as <a href="https://storm.incubator.apache.org/">Storm</a> and <a href="https://spark.apache.org/">Spark</a> and ingesting packets from a proxy such as <a href="http://mitmproxy.org">mitmproxy</a> or <a href="https://code.google.com/p/ratproxy/">ratproxy</a>. However, we wanted both the correlation engine (storm/spark) and the proxies to be able to scale naturally by just increasing the computes dedicated to each of these functions. So we added <a href="https://kafka.apache.org/">Kafka</a> as our message broker that allowed the proxies to serve content to our correlation engine. </p>
+
+<blockquote>
+<p>Our fundamental goal was to be able to apply the <strong>search</strong> metaphor to packets and to be able to correlate incoming packets across a massive dataset of previously recorded signals (from IDS, WAFs, FWs etc.) </p>
+</blockquote>
+
+<p>We also wanted folks to quickly try it out and extend it to fit their own custom environments/use-cases and hope to standardize the platform as more feature-requests emerge. To that effect, we have created a [all-in-one vm] that you could download and run locally. The VM contains all the tools installed and pre-configured using a single setup script. We also provide a simple <a href="http://rubyonrails.org/">Rails</a> dashboard that polls a <a href="http://flask.pocoo.org/">Flask</a> REST server that in turn queries an underlying <a href="https://mongodb.org">Mongo</a> datastore. </p>
+
+<p><img src="https://i.imgur.com/qDV8KKt.png" alt="Ojas Platform"></p>
+
+<h3>
+<a name="all-in-one-vm" class="anchor" href="#all-in-one-vm"><span class="octicon octicon-link"></span></a>All-in-one-vm</h3>
+
+<p>Download the VM from <a href="https://">here</a></p>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Dhananjay 'dj' Sampath (<a href="https://github.com/dsampath" class="user-mention">@dsampath</a>)
+Brian Lazear (<a href="https://github.com/blazear" class="user-mention">@blazear</a>) </p>
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
