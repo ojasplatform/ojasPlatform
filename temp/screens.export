@@ -1,0 +1,10 @@
+There are screens on:
+	11874.pythonprod	(09/17/2014 03:11:58 AM)	(Detached)
+	11367.2broker	(09/17/2014 03:06:16 AM)	(Detached)
+	5799.consumer	(09/15/2014 09:21:54 PM)	(Detached)
+	5687.producer	(09/15/2014 09:21:35 PM)	(Detached)
+	5435.topic	(09/15/2014 09:18:27 PM)	(Detached)
+	5301.broker	(09/15/2014 09:18:01 PM)	(Detached)
+	5147.server	(09/15/2014 09:04:12 PM)	(Detached)
+7 Sockets in /var/run/screen/S-ubuntu.
+

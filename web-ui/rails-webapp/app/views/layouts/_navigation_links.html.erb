@@ -1,0 +1,37 @@
+<%# add navigation links to this file %>
+<% if user_signed_in? %>
+  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
+      <li class='dropdown medium only-icon widget'>
+        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+          <i class='icon-rss'></i>
+          <div class='label'>5</div>
+        </a>
+        <ul class='dropdown-menu'>
+          <li>
+            <a href='#'>
+              <div class='widget-body'>
+                <div class='pull-left icon'>
+                  <i class='icon-user text-success'></i>
+                </div>
+                <div class='pull-left text'>
+                  John Doe signed up
+                  <small class='text-muted'>just now</small>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class='divider'></li>
+	  </ul>
+  </li>
+		  
+
+<% else %>
+  <li><%= link_to 'Sign in', new_user_session_path %></li>
+  <li><%= link_to 'Sign up', new_user_registration_path %></li>
+<% end %>
+<% if user_signed_in? %>
+  <% if current_user.admin? %>
+    <li><%= link_to 'Users', users_path %></li>
+  <% end %>
+<% end %>

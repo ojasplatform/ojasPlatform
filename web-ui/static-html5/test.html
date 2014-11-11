@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/joint.css" />
+	<link rel="canonical" href="http://localhost:8888/test-dir/" />
+    <title>Ojas Networks - Pudding Release</title>
+    <link href="css/application.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+	
+</head>
+<body class="background-dark">
+<div class="logo">
+    <h2><a href="index.html">Ojas <strong>Networks</strong>: <small>Pudding Release (&#945 0.1)</small></a></h2>
+</div>
+<nav id="sidebar" class="sidebar nav-collapse collapse">
+    <ul id="side-nav" class="side-nav">
+        <li class="active">
+            <a href="index.html"><i class="fa fa-home"></i> <span class="name">Dashboard</span></a>
+        </li>
+        <li class="panel">
+            <a class="accordion-toggle collapsed" data-toggle="collapse"
+               data-parent="#side-nav" href="#forms-collapse"><i class="fa fa-edit"></i> <span class="name">Events</span></a>
+            <ul id="forms-collapse" class="panel-collapse collapse">
+                <li><a href="event_browser.html">Event Browser</a></li>
+                <li><a href="learning_engine.html">Learning Engine</a></li>
+            </ul>
+        </li>
+        <li class="panel">
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#test-collapse"><i class="fa fa-bar-chart-o"></i> <span class="name">Test</span></a>
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#stats-collapse"><i class="fa fa-bar-chart-o"></i> <span class="name">Reports</span></a>
+            <ul id="stats-collapse" class="panel-collapse collapse">
+                <li><a href="stat_statistics.html">Breach Report</a></li>
+                <li><a href="stat_charts.html">Suspicious Activity Report</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+	   <div class="content container">
+           <div class="row"><br><br><br>
+               <div class="col-md-8 col-md-offset-3">
+                   <h2 class="page-title">Demo Buttons <small>push them.. you know you want to :P</small></h2>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-md-6 col-md-offset-3">
+                   <section class="widget">
+					   
+					   <div class="body text-align-center">
+            <div class="well">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-default" href="http://172.16.124.241:5000/reset/all"
+                                data-placement="top" data-original-title=".btn .btn-default">
+                            Reset
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-primary" href="http://172.16.124.241:5000/setLearn"
+                                data-placement="top" data-original-title=".btn .btn-primary">
+                            Learn
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-info" href="http://172.16.124.241:5000/setMalicious"
+                                data-placement="top" data-original-title=".btn .btn-info">
+                            &nbsp;Malicious&nbsp;
+                        </button>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+					</section>
+				</div>
+			</div>
+		</div>
+			
+<!-- jquery and friends -->
+<script src="lib/jquery/jquery-2.0.3.min.js"> </script>
+<script src="lib/jquery-pjax/jquery.pjax.js"></script>
+
+<!-- jquery plugins -->
+<script src="lib/jquery-maskedinput/jquery.maskedinput.js"></script>
+<script src="lib/parsley/parsley.js"> </script>
+<script src="lib/icheck.js/jquery.icheck.js"></script>
+<script src="lib/select2.js"></script>
+<script src="lib/jquery.dataTables.min.js"></script>
+
+
+<!-- d3-->
+<script src="lib/nvd3/lib/d3.v2.js"></script>
+<script src="lib/d3.layout.min.js"></script>
+
+<!-- rickshaw -->
+<script src="lib/rickshaw/rickshaw.js"></script>
+<script src="lib/rickshaw/rickshaw-extensions.js"></script>
+
+<!-- d3, nvd3-->
+<script src="lib/nvd3/lib/d3.v2.js"></script>
+<script src="lib/nvd3/nv.d3.custom.js"></script>
+
+
+<!-- nvd3 models -->
+<script src="lib/nvd3/src/models/scatter.js"></script>
+<script src="lib/nvd3/src/models/axis.js"></script>
+<script src="lib/nvd3/src/models/legend.js"></script>
+<script src="lib/nvd3/src/models/stackedArea.js"></script>
+<script src="lib/nvd3/src/models/stackedAreaChart.js"></script>
+<script src="lib/nvd3/src/models/line.js"></script>
+<script src="lib/nvd3/src/models/pie.js"></script>
+<script src="lib/nvd3/src/models/pieChartTotal.js"></script>
+<script src="lib/nvd3/stream_layers.js"></script>
+<script src="lib/nvd3/src/models/lineChart.js"></script>
+<script src="lib/nvd3/src/models/multiBar.js"></script>
+<script src="lib/nvd3/src/models/multiBarChart.js"></script>
+
+<!-- jquery and friends -->
+<script src="lib/jquery-ui-1.10.3.custom.js"></script>
+<script src="lib/jquery-pjax/jquery.pjax.js"></script>
+
+
+<!--backbone and friends -->
+<script src="lib/backbone/underscore-min.js"></script>
+<script src="lib/backbone/backbone-min.js"></script>
+<script src="lib/backbone/backbone-pageable.js"></script>
+<script src="lib/backgrid/backgrid.js"></script>
+<script src="lib/backgrid/backgrid-paginator.js"></script>
+
+
+<!-- bootstrap default plugins -->
+<script src="lib/bootstrap/transition.js"></script>
+<script src="lib/bootstrap/collapse.js"></script>
+<script src="lib/bootstrap/tooltip.js"></script>
+<script src="lib/bootstrap/popover.js"></script>
+<script src="lib/bootstrap/button.js"></script>
+<script src="lib/bootstrap/dropdown.js"></script>
+<script src="lib/bootstrap/alert.js"></script>
+<script src="lib/bootstrap/modal.js"></script>
+<script src="lib/bootstrap/tab.js"> </script>
+
+
+<!-- basic application js-->
+<script src="js/app.js"></script>
+<script src="js/settings.js"></script>
+
+
+
+<!-- page specific -->
+<script src="js/tables-dynamic.js"></script>
+<script src="js/alert-box.js"></script>
+<script>
+$('#id').on('click', function (e) {
+
+     //your awesome code here
+
+})
+</script>
+		
+</body>
+</html>

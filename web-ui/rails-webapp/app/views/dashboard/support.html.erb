@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+ <body class>
+    <div id='wrapper'>
+      <div id='main-nav-bg'></div>
+	  <%= render 'nav', :user => @user %>
+	  <section id='content'>
+		  <%= render 'support_content', :user => @user %>
+      </section>
+    </div>
+  	<%= render 'script', :user => @user %>
+	
+    <!-- / END - page related files and scripts [optional] -->
+  </body>

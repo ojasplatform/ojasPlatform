@@ -1,0 +1,374 @@
+        <div class='container'>
+          <div class='row' id='content-wrapper'>
+            <div class='col-xs-12'>
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='page-header'>
+                    <h1 class='pull-left'>
+                      <i class='icon-bar-chart'></i>
+                      <span>Event Browser</span>
+                    </h1>
+                    <div class='pull-right'>
+                      <ul class='breadcrumb'>
+                        <li>
+                          <a href='index.html'>
+                            <i class='icon-bar-chart'></i>
+                          </a>
+                        </li>
+                        <li class='separator'>
+                          <i class='icon-angle-right'></i>
+                        </li>
+                        <li>Ojas</li>
+                        <li class='separator'>
+                          <i class='icon-angle-right'></i>
+                        </li>
+                        <li class='active'>Charts</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+              <hr class='hr-drouble'>
+              <div class='row'>
+                <div class='col-sm-12 col-md-6'>
+                  <div class='box'>
+                    <div class='box-header'>
+                      <div class='title'>
+                        <div class='icon-inbox'></div>
+                        Orders
+                      </div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-6'>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-error'>191</h3>
+                          <small>New</small>
+                          <div class='text-error icon-inbox align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-warning'>311</h3>
+                          <small>In process</small>
+                          <div class='text-warning icon-check align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-info'>3</h3>
+                          <small>Pending</small>
+                          <div class='text-info icon-time align-right'></div>
+                        </div>
+                      </div>
+                      <div class='col-sm-6'>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-primary'>3</h3>
+                          <small>Shipped</small>
+                          <div class='text-primary icon-truck align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-success'>981</h3>
+                          <small>Completed</small>
+                          <div class='text-success icon-flag align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-muted'>0</h3>
+                          <small>Canceled</small>
+                          <div class='text-muted icon-remove align-right'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+					<div class='col-sm-12 col-md-6'>
+	                    <div class='box'>
+	                      <div class='box-header'>
+	                        <div class='title'>
+	                          <div class='icon-exclamation'></div>
+	                          Alert Counter
+						  	</div>
+						  </div>
+						</div>
+						<div id="graph" style="min-width: 500px; height: 200px; margin: 0 auto"></div>
+					</div>
+				</div>
+              <div class='group-header'>
+                <div class='row'>
+                  <div class='col-sm-6 col-sm-offset-3'>
+                    <div class='text-center'>
+                      <h2>Event Browser</h2>
+                      <small class='text-muted'>Alerts are prioritized based on their severity...</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='box bordered-box orange-border' style='margin-bottom:0;'>
+                    <div class='box-header orange-background'>
+                      <div class='title'>Alerts</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-no-padding'>
+                      <div class='responsive-table'>
+                        <div class='scrollable-area'>
+                          <table id='alert-feed' class='data-table table table-bordered table-striped' style='margin-bottom:0;'>
+                            <thead>
+                              <tr>
+                                <th>
+                                  Message
+                                </th>
+                                <th>
+                                  Alert-type
+                                </th>
+                                <th>
+                                  Alert Level
+                                </th>
+                                <th>
+                                  Time Stamp
+                                </th>
+                                <th>
+                                  Action
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                             
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>			  
+			  <hr class='hr-drouble'>
+			  
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='box bordered-box orange-border' style='margin-bottom:0;'>
+                    <div class='box-header orange-background'>
+                      <div class='title'>Events</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-no-padding'>
+                      <div class='responsive-table'>
+                        <div class='scrollable-area'>
+                          <table id='event-feed' class='data-table table table-bordered table-striped' style='margin-bottom:0;'>
+                            <thead>
+                              <tr>
+                                <th>
+                                  Message
+                                </th>
+                                <th>
+                                  Path
+                                </th>
+                                <th>
+                                  Response Size
+                                </th>
+                                <th>
+                                  Time Stamp
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                             
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>			  
+
+            </div>
+          </div>
+
+        </div>
+		<script>
+		$(function () {
+		    $('#graph').highcharts({
+		        chart: {
+		            type: 'column'
+		        },
+		        title: {
+		            text: ''
+		        },
+		        subtitle: {
+		            text: ''
+		        },
+		        xAxis: {
+		            type: 'category',
+		            labels: {
+		                rotation: 0,
+		                style: {
+		                    fontSize: '8px',
+		                    fontFamily: 'Verdana, sans-serif'
+		                }
+		            }
+		        },
+		        yAxis: {
+		            min: 0,
+		            title: {
+		                text: 'Number of Alerts'
+		            }
+		        },
+		        legend: {
+		            enabled: false
+		        },
+		        tooltip: {
+		            pointFormat: 'Number of Alerts'
+		        },
+		        series: [{
+		            name: 'Alerts',
+		            data: [
+		                ['12:30pm', 6],
+		                ['12:33pm', 0],
+		                ['12:36pm', 0],
+		                ['12:39pm', 0],
+		                ['12:41pm', 0],
+		                ['12:44pm', 0],
+		                ['12:47pm', 3],
+		                ['12:51pm', 0],
+						
+		            ],
+		            dataLabels: {
+		                enabled: true,
+		                rotation: -90,
+		                color: '#FFFFFF',
+		                align: 'right',
+		                x: 4,
+		                y: 10,
+		                style: {
+		                    fontSize: '11px',
+		                    fontFamily: 'Verdana, sans-serif',
+		                    textShadow: '0 0 3px black'
+		                }
+		            }
+		        }]
+		    });
+		});
+		</script>
+		
+		<script>
+		
+		$(function(){
+		    function pageLoad(){
+
+		
+				$.getJSON('http://172.16.124.141:5000/getAlerts', function(data) {
+					function makeUL(listItem, dateItem) {
+						// Create the list element:
+						//var list = document.createElement('ul');
+						//var list = document.getElementById('alert-feed');
+						var list = null
+
+						for(var i = 0; i < listItem.length; i++) {
+							// Create the list item:
+							var item = document.createElement('tr');
+							item.innerHTML = '<td> GET </td>'+
+							'<td>'+listItem[i]+')</td>'+ 
+							'<td>'+dateItem[i]+'</td>'+                                
+                                '<td><span class="label label-important">Important</span></td>'+
+                                '<td><div class="text-right"><a class="btn btn-success btn-xs" href="#">'+
+                                      '<i class="icon-ok"></i></a>'+
+									  '<a class="btn btn-danger btn-xs" href="#"><i class="icon-remove"></i></a>'+
+                                  '</div></td>';
+							
+							// Set its contents:
+							//item.appendChild(document.createTextNode(array[i]));
+							// Add it to the list:
+							//list.appendChild(item);
+							$('#alert-feed > tbody').append(item);
+			
+						}
+
+						// Finally, return the constructed list:
+						return list;
+					}
+					console.log(data);
+					var listitem = [];
+					var dateItem = [];
+					$(data).each(function(index){
+						listitem.push(this.alertType);
+						dateItem.push(this.strTime);
+					});
+					makeUL(listitem, dateItem);
+					var min = 0;
+					var max = 10;
+					// and the formula is:
+					var random = Math.floor(Math.random() * (max - min + 1)) + min;
+					//document.getElementById('unread-notifications').innerHTML = random
+				});
+		
+				$.getJSON('http://172.16.124.141:5000/getEvents', function(data) {
+					function makeAUL(array1, array2, array3, array4) {
+						// Create the list element:
+						for(var i = 0; i < listItem.length; i++) {
+							// Create the list item:
+							var item = document.createElement('tr');
+							item.innerHTML ='<td>'+array1[i]+'</td>'+ 
+							'<td>'+array3[i]+'</td>'+
+							'<td>'+array4[i]+' bytes </td>'+
+							'<td><div class="time">'+array2[i]+'</div></td>';
+							
+							// Set its contents:
+							//item.appendChild(document.createTextNode(array[i]));
+							// Add it to the list:
+							//list.appendChild(item);
+							$('#event-feed > tbody').append(item);
+			
+						}
+						
+
+						// Finally, return the constructed list:
+						return;
+					}
+					console.log(data);
+					var listItem = [];
+					var timeItem = [];
+					var methodItem = [];
+					var pathItem = [];
+					var hostItem = [];
+					var lengthItem = [];
+			
+					$(data).each(function(index){
+						listItem.push(this['req-method']);
+						timeItem.push(this.strTime);
+						pathItem.push(this['req-path'])
+						lengthItem.push(this['response-length'])
+					});
+					//document.getElementById('event-feed').appendChild(makeUL(listitem, timeItem, pathItem, lengthItem));
+					makeAUL(listItem, timeItem, pathItem, lengthItem);
+					var min = 0;
+					var max = 10;
+					// and the formula is:
+					var random = Math.floor(Math.random() * (max - min + 1)) + min;
+					//document.getElementById('unread-notifications-events').innerHTML = random
+				});
+		
+		
+			}
+		    pageLoad();
+
+		    //PjaxApp.onPageLoad(pageLoad);
+		});
+		
+		</script>

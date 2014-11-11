@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/joint.css" />
+	<link rel="canonical" href="http://localhost:8888/test-dir/" />
+    <title>Ojas Networks - Pudding Release</title>
+    <link href="css/application.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="http://www.jointjs.com/downloads/joint.css" />
+	<script type="text/javascript" src="http://www.jointjs.com/downloads/joint.js" ></script>
+	
+</head>
+<body class="background-dark">
+<div class="logo">
+    <h2><a href="index.html">Ojas <strong>Networks</strong>: <small>Pudding Release (&#945 0.1)</small></a></h2>
+</div>
+<nav id="sidebar" class="sidebar nav-collapse collapse">
+    <ul id="side-nav" class="side-nav">
+        <li class="active">
+            <a href="index.html"><i class="fa fa-home"></i> <span class="name">Dashboard</span></a>
+        </li>
+        <li class="panel">
+            <a class="accordion-toggle collapsed" data-toggle="collapse"
+               data-parent="#side-nav" href="#forms-collapse"><i class="fa fa-edit"></i> <span class="name">Events</span></a>
+            <ul id="forms-collapse" class="panel-collapse collapse">
+                <li><a href="event_browser.html">Event Browser</a></li>
+                <li><a href="learning_engine.html">Learning Engine</a></li>
+            </ul>
+        </li>
+        <li class="panel">
+           <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#test-collapse"><i class="fa fa-bar-chart-o"></i> <span class="name">Demo</span></a>
+           <ul id="test-collapse" class="panel-collapse collapse">
+               <li><a href="test.html">Panel</a></li>
+           </ul>
+            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#stats-collapse"><i class="fa fa-bar-chart-o"></i> <span class="name">Reports</span></a>
+            <ul id="stats-collapse" class="panel-collapse collapse">
+                <li><a href="stat_statistics.html">Breach Report</a></li>
+                <li><a href="stat_charts.html">Suspicious Activity Report</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+		<div class="wrap">
+		    <div class="content container">
+			        <div class="row"><br><br><br>
+			            <div class="col-md-9 col-md-offset-1">
+			                <h2 class="page-title">Security Alerts <small>Incident reports</small></h2>
+			            </div>
+			        </div>
+			        <div class="row">
+			            <div class="col-md-9 col-md-offset-1 widget-container">
+			                <section class="widget">
+			                    <header>
+			                        <h5>
+			                            Unread Alerts <span class="badge badge-success">
+			                            	<div id="unread-notifications">
+											</div>
+			                            </span>
+			                        </h5>
+			                    </header>
+			                    <div class="body">
+			                        <ul class="news-list stretchable">
+										<div id="alert-feed">
+											
+										</div>
+
+			                        </ul>
+			                    </div>
+			                </section>
+						</div>
+					</div>
+			        <div class="row"><br><br><br>
+			            <div class="col-md-9 col-md-offset-1">
+			                <h2 class="page-title">Event Inspector <small>Packet Capture</small></h2>
+			            </div>
+			        </div>
+			        <div class="row">
+			            <div class="col-md-9 col-md-offset-1 widget-container">
+			                <section class="widget">
+			                    <header>
+			                        <h5>
+			                            New Events <span class="badge badge-success">
+			                            	<div id="unread-notifications-events">
+											</div>
+			                            </span>
+			                        </h5>
+			                    </header>
+			                    <div class="body">
+			                        <ul class="news-list stretchable">
+										<div id="event-feed">
+											
+										</div>
+
+			                        </ul>
+			                    </div>
+			                </section>
+						</div>
+					</div>
+					
+        	<div class="row"><br><br><br>
+            <div class="col-md-10 col-md-offset-1">
+                <section class="widget">
+                    <header>
+                        <h4>
+                            <i class="fa fa-file-alt"></i>
+                            Events Browser
+                        </h4>
+                    </header>
+                    <div class="body">
+                        <blockquote>
+                            Column sorting, live search, pagination enabled for security events.  
+                        </blockquote>
+                        <table id="datatable-table" class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th class="no-sort">Icon</th>
+                                <th>Name</th>
+                                <th class="no-sort hidden-phone-landscape">Info</th>
+                                <th>Description</th>
+                                <th class="hidden-phone-landscape">Date</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><i class="fa fa-qrcode fa-2x"></i></td>
+                                <td><strong>Algerd</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; JPEG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 200x150
+                                    </small>
+                                </td>
+                                <td><a href="#">Palo Alto</a></td>
+                                <td class="hidden-phone-landscape">June 27, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><i class="fa fa-wrench fa-2x"></i></td>
+                                <td><strong>Vitaut</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; PNG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 6433x4522
+                                    </small>
+                                </td>
+                                <td><a href="#">Vilnia</a></td>
+                                <td class="hidden-phone-landscape">January 1, 1442</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><i class="fa fa-envelope-o fa-2x"></i></td>
+                                <td><strong>Honar</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; AVI
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 1440x980
+                                    </small>
+                                </td>
+                                <td><a href="#">Berlin</a></td>
+                                <td class="hidden-phone-landscape">August 6, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><i class="fa fa-random fa-2x"></i></td>
+                                <td><strong>Jack</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; PNG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 12x43
+                                    </small>
+                                </td>
+                                <td><a href="#">San Francisco</a></td>
+                                <td class="hidden-phone-landscape">August 19, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><i class="fa fa-tags fa-2x"></i></td>
+                                <td><strong>Leon</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; MP4
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 800x480
+                                    </small>
+                                </td>
+                                <td><a href="#">Brasilia</a></td>
+                                <td class="hidden-phone-landscape">October 1, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><i class="fa fa-inbox fa-2x"></i></td>
+                                <td><strong>Max</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; TXT
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; -
+                                    </small>
+                                </td>
+                                <td><a href="#">Helsinki</a></td>
+                                <td class="hidden-phone-landscape">October 29, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><i class="fa fa-power-off fa-2x"></i></td>
+                                <td><strong>Pol</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; MOV
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 640x480
+                                    </small>
+                                </td>
+                                <td><a href="#">Radashkovichi</a></td>
+                                <td class="hidden-phone-landscape">November 11, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><i class="fa fa-phone fa-2x"></i></td>
+                                <td><strong>Chrishna</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; DOC
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; -
+                                    </small>
+                                </td>
+                                <td><a href="#">Mumbai</a></td>
+                                <td class="hidden-phone-landscape">December 2, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><i class="fa fa-asterisk fa-2x"></i></td>
+                                <td><strong>Leslie</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; AVI
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 4820x2140
+                                    </small>
+                                </td>
+                                <td><a href="#">Singapore</a></td>
+                                <td class="hidden-phone-landscape">December 6, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><i class="fa fa-star fa-2x"></i></td>
+                                <td><strong>David</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; XML
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; -
+                                    </small>
+                                </td>
+                                <td><a href="#">Portland</a></td>
+                                <td class="hidden-phone-landscape">December 13, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><i class="fa fa-dashboard fa-2x"></i></td>
+                                <td><strong>Andrej</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; VOB
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 6433x4522
+                                    </small>
+                                </td>
+                                <td><a href="#">Minsk</a></td>
+                                <td class="hidden-phone-landscape">December 14, 2013</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><i class="fa fa-fighter-jet fa-2x"></i></td>
+                                <td><strong>Julia</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; JPEG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 40x40
+                                    </small>
+                                </td>
+                                <td><a href="#">Hrodna</a></td>
+                                <td class="hidden-phone-landscape">July 9, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><i class="fa fa-group fa-2x"></i></td>
+                                <td><strong>Ihnat</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; JAVA
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; -
+                                    </small>
+                                </td>
+                                <td><a href="#">Los Angeles</a></td>
+                                <td class="hidden-phone-landscape">August 2, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><i class="fa fa-home fa-2x"></i></td>
+                                <td><strong>Abraham</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; DOCX
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; -
+                                    </small>
+                                </td>
+                                <td><a href="#">Panama</a></td>
+                                <td class="hidden-phone-landscape">September 3, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><i class="fa fa-key fa-2x"></i></td>
+                                <td><strong>Tomas</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; JPEG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 1800x1420
+                                    </small>
+                                </td>
+                                <td><a href="#">Amsterdam</a></td>
+                                <td class="hidden-phone-landscape">November 13, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><i class="fa fa-link fa-2x"></i></td>
+                                <td><strong>Scott</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; PNG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 240x460
+                                    </small>
+                                </td>
+                                <td><a href="#">Sluck</a></td>
+                                <td class="hidden-phone-landscape">December 5, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td><i class="fa fa-search-plus fa-2x"></i></td>
+                                <td><strong>Pham</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; MAIL
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; -
+                                    </small>
+                                </td>
+                                <td><a href="#">Tokyo</a></td>
+                                <td class="hidden-phone-landscape">December 8, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td><i class="fa fa-chevron-right fa-2x"></i></td>
+                                <td><strong>Peter</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; PNG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 8320x6400
+                                    </small>
+                                </td>
+                                <td><a href="#">Cape Town</a></td>
+                                <td class="hidden-phone-landscape">December 29, 2012</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td><i class="fa fa-volume-down fa-2x"></i></td>
+                                <td><strong>Uladz'</strong></td>
+                                <td class="hidden-phone-landscape">
+                                    <small>
+                                        <strong>Type:</strong>
+                                        &nbsp; JPEG
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <strong>Dimensions:</strong>
+                                        &nbsp; 2200x1600
+                                    </small>
+                                </td>
+                                <td><a href="#">Mahileu</a></td>
+                                <td class="hidden-phone-landscape">December 7, 2013</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+			</div>
+			
+
+		    <div class="loader-wrap hiding hide">
+		        <i class="fa fa-spinner fa-spin"></i>
+		    </div>
+		    <div class="loader-wrap hiding hide">
+		        <i class="fa fa-spinner fa-spin"></i>
+		    </div>
+		</div>
+
+			
+<!-- jquery and friends -->
+<script src="lib/jquery/jquery-2.0.3.min.js"> </script>
+<script src="lib/jquery-pjax/jquery.pjax.js"></script>
+
+<!-- jquery plugins -->
+<script src="lib/jquery-maskedinput/jquery.maskedinput.js"></script>
+<script src="lib/parsley/parsley.js"> </script>
+<script src="lib/icheck.js/jquery.icheck.js"></script>
+<script src="lib/select2.js"></script>
+<script src="lib/jquery.dataTables.min.js"></script>
+
+
+<!-- d3-->
+<script src="lib/nvd3/lib/d3.v2.js"></script>
+<script src="lib/d3.layout.min.js"></script>
+
+<!-- rickshaw -->
+<script src="lib/rickshaw/rickshaw.js"></script>
+<script src="lib/rickshaw/rickshaw-extensions.js"></script>
+
+<!-- d3, nvd3-->
+<script src="lib/nvd3/lib/d3.v2.js"></script>
+<script src="lib/nvd3/nv.d3.custom.js"></script>
+
+
+<!-- nvd3 models -->
+<script src="lib/nvd3/src/models/scatter.js"></script>
+<script src="lib/nvd3/src/models/axis.js"></script>
+<script src="lib/nvd3/src/models/legend.js"></script>
+<script src="lib/nvd3/src/models/stackedArea.js"></script>
+<script src="lib/nvd3/src/models/stackedAreaChart.js"></script>
+<script src="lib/nvd3/src/models/line.js"></script>
+<script src="lib/nvd3/src/models/pie.js"></script>
+<script src="lib/nvd3/src/models/pieChartTotal.js"></script>
+<script src="lib/nvd3/stream_layers.js"></script>
+<script src="lib/nvd3/src/models/lineChart.js"></script>
+<script src="lib/nvd3/src/models/multiBar.js"></script>
+<script src="lib/nvd3/src/models/multiBarChart.js"></script>
+
+<!-- jquery and friends -->
+<script src="lib/jquery-ui-1.10.3.custom.js"></script>
+<script src="lib/jquery-pjax/jquery.pjax.js"></script>
+
+
+<!--backbone and friends -->
+<script src="lib/backbone/underscore-min.js"></script>
+<script src="lib/backbone/backbone-min.js"></script>
+<script src="lib/backbone/backbone-pageable.js"></script>
+<script src="lib/backgrid/backgrid.js"></script>
+<script src="lib/backgrid/backgrid-paginator.js"></script>
+
+
+<!-- bootstrap default plugins -->
+<script src="lib/bootstrap/transition.js"></script>
+<script src="lib/bootstrap/collapse.js"></script>
+<script src="lib/bootstrap/tooltip.js"></script>
+<script src="lib/bootstrap/popover.js"></script>
+<script src="lib/bootstrap/button.js"></script>
+<script src="lib/bootstrap/dropdown.js"></script>
+<script src="lib/bootstrap/alert.js"></script>
+<script src="lib/bootstrap/modal.js"></script>
+<script src="lib/bootstrap/tab.js"> </script>
+
+
+<!-- basic application js-->
+<script src="js/app.js"></script>
+<script src="js/settings.js"></script>
+
+
+
+<!-- page specific -->
+<script src="js/tables-dynamic.js"></script>
+<script src="js/alert-box.js"></script>
+
+		
+</body>
+</html>

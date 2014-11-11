@@ -1,0 +1,83 @@
+      <nav id='main-nav'>
+        <div class='navigation'>
+          <ul class='nav nav-stacked'>
+			   <li class="<%= 'active' if params[:action]=='index' %>">
+				<%= link_to '<span><i class="icon-dashboard"></i> Dashboard </span>'.html_safe,:controller=>'dashboard', :action=>"index", :id=>@user %>
+               </li>
+			   <li class="<%= 'active' if params[:action]=='stats' %>"> <!-- TODO figure out who to make the right nav active -->
+				<%= link_to '<span><i class="icon-bar-chart"></i> Event Browser</span>'.html_safe,:controller=>'dashboard', :action=>"stats", :id=>@user %>
+                </li>
+                <li class=''>
+					<%= link_to '<span><i class="icon-envelope"></i> Insights </span>'.html_safe,:controller=>'dashboard', :action=>"insights", :id=>@user %>
+                </li>
+                <li class=''>
+				<%= link_to '<span><i class="icon-cloud"></i> Cloud Configuration </span>'.html_safe,:controller=>'dashboard', :action=>"cloudconfig", :id=>@user %>
+                </li>				
+                <li class=''>
+				<%= link_to '<span><i class="icon-comments"></i> Configuration </span>'.html_safe,:controller=>'dashboard', :action=>"settings", :id=>@user %>
+                </li>
+                <li class=''>
+				<%= link_to '<span><i class="icon-list-ul"></i> Support </span>'.html_safe,:controller=>'dashboard', :action=>"support", :id=>@user %>
+                </li>
+                <li class=''>
+				<%= link_to '<span><i class="icon-dollar"></i> Billing </span>'.html_safe,:controller=>'dashboard', :action=>"billing", :id=>@user %>
+                </li>
+			
+            <!-- Commenting out dropdown nav item 
+			<li>
+              <a class='dropdown-collapse ' href='#'>
+                <i class='icon-cogs'></i>
+                <span>Components</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='charts.html'>
+                    <i class='icon-bar-chart'></i>
+                    <span>Charts</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='address_book.html'>
+                    <i class='icon-envelope'></i>
+                    <span>Address book</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='chats.html'>
+                    <i class='icon-comments'></i>
+                    <span>Chats</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='filetrees.html'>
+                    <i class='icon-list-ul'></i>
+                    <span>File trees</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='fileupload.html'>
+                    <i class='icon-file'></i>
+                    <span>Fileupload</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='todo.html'>
+                    <i class='icon-list-alt'></i>
+                    <span>Todo list</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='wysiwyg.html'>
+                    <i class='icon-paste'></i>
+                    <span>WYSIWYG</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+				
+			End of the additional drop down nav item !-->
+
+          </ul>
+        </div>
+      </nav>
