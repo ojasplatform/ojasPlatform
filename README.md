@@ -7,7 +7,7 @@ Packet Processing Platform is an open source streaming big data pipeline that in
 * Version 0.1
 * We are currently using [mitmproxy project](http://mitmproxy.org) as our http proxy
 * [Kafka](http://kafka.apache.org) is our ingestion engine
-* [Spark](http://apache-spark.org) is our packet processing engine
+* [Spark](http://spark.apache.org) is our packet processing engine
 * We run a [Flask](http://flask.pocoo.org) as a REST API service
 * SaaS application is a modified version of the [Stripe's rails app](https://github.com/RailsApps/rails-stripe-membership-saas)
 
